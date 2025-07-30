@@ -1,0 +1,104 @@
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page | Museum Digital</title>
+
+    <!-- Bootstrap & Google Fonts -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* === Global === */
+        *{font-family:'Inter',sans-serif;margin:0;padding:0;box-sizing:border-box}
+        body{
+            background:url('image/msm.jpg') center/cover no-repeat fixed;
+            color:#f8f9fa;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+
+        /* === Navbar === */
+        .navbar-custom{
+            background:rgba(255,255,255,.1);
+            backdrop-filter:blur(10px);
+            box-shadow:0 2px 6px rgba(0,0,0,.1);
+        }
+        .navbar-brand{font-weight:700;font-size:1.4rem;color:#fff!important}
+        .nav-link{font-weight:500;color:#fff!important}
+        .nav-link.active{text-decoration:underline}
+
+        /* === Hero Card === */
+        .hero-card{
+            background:rgba(255,255,255,.2);
+            border:none;
+            backdrop-filter:blur(10px);
+            color:#fff;
+            border-radius:18px;
+            box-shadow:0 10px 40px rgba(0,0,0,.2);
+            padding:45px 30px;
+            max-width:680px;
+            margin:90px auto 40px;
+            transition:.3s;
+        }
+        .hero-card:hover{transform:translateY(-5px)}
+
+        /* === Buttons === */
+        .btn-login,.btn-register{border:none;font-weight:600;border-radius:10px;padding:12px 26px}
+        .btn-login{background:#4a90e2;color:#fff}.btn-login:hover{background:#357ABD}
+        .btn-register{background:#f2994a;color:#fff}.btn-register:hover{background:#d98230}
+
+        /* === Footer === */
+        footer{
+            background:rgba(255,255,255,.1);
+            backdrop-filter:blur(6px);
+            font-size:14px;
+            color:#f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" href="#">🏛️ Museum Digital</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#">🏠 Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="login-admin.jsp">👨‍💼 Admin</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ℹ️ Tentang</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">📞 Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== Hero Section ===== -->
+<div class="container hero-card text-center">
+    <h1 class="fw-bold">Selamat Datang di Museum Digital</h1>
+    <p class="lead mt-3 mb-4">
+        Eksplorasi koleksi patung dan sejarah melalui sistem informasi kami yang interaktif dan modern.
+    </p>
+
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="login.jsp" class="btn btn-login">🔐 Masuk</a>
+        <a href="form.jsp"  class="btn btn-register">📝 Daftar</a>
+    </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer class="text-center py-3 mt-auto">
+    <p class="mb-0">© 2025 Museum Digital - Hak Cipta Dilindungi</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
